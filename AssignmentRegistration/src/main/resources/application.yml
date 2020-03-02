@@ -18,3 +18,4 @@ spring:
     show-sql: true
   messages:
     basename: validation
+ 
