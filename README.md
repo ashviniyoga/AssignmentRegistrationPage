@@ -1,0 +1,2 @@
+# AssignmentRegistrationPage
+AssignmentRegistrationPage
