@@ -5,11 +5,13 @@ import java.util.List;
 import com.assignmt.Model.User;
 
 public interface UserService {
+	
 	public List<User> getAllUser();
 	
-	void save(User user);
+	public void save(User user);
 	
-	User findByUsername(String username);
+	public User findByUserName(String username);
 	
+	public void delete(User user);
 	
 }

@@ -20,12 +20,22 @@ public class User {
 	@Column
 	private String userName;
 	@Column
+	private String email;
+	
+	@Column
 	private String password;
+	
 	@Transient
 	private String confirmpassword;
 	
 	@ManyToMany
 	private Set<Role> roles;
+	
+	@Column
+	private int active;
+	
+	
+	
 	public int getUserId() {
 		return userId;
 	}
@@ -55,6 +65,18 @@ public class User {
 	}
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getActive() {
+		return active;
+	}
+	public void setActive(int active) {
+		this.active = active;
 	}
 	
 	
