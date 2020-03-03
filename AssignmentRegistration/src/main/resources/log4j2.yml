@@ -1,0 +1,7 @@
+onfiguration:
+  status: debug
+
+  appenders:
+    Console:
+      name: LogToConsole
+      level: trace
